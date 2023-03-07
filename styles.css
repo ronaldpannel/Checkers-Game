@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  overflow: hidden;
+}
+.wrapper {
+  /* border: 2px white solid; */
+  width: 410px;
+  height: 550px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.scoreBoard {
+  /* border: solid white 1px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 9%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.gameBoard {
+  border: solid white 1px;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 100%;
+  border: brown solid 5px;
+}
+.square {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  color: wheat;
+  position: absolute;
+  left: 50%;
+  top: 96%;
+  transform: translate(-50%, -96%);
+}
+.nextPlayer {
+  font-size: 20px;
+  margin-top: 10px;
+}
+p {
+  color: wheat;
+}
+.squareCream {
+  background-color: rgb(245, 200, 154);
+}
+.squareBrown {
+  background-color: rgba(137, 73, 5, 1);
+}
+.checker {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+}
+.startScreen {
+  color: wheat;
+  width: 410px;
+  height: 550px;
+  background-color: rgba(137, 73, 5, 1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 25px;
+  display: block;
+}
+.listDiv {
+ 
+  font-size: 18px;
+  text-align: left;
+  width: 100%;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+button{
+  font-size: 16px;
+  align-items: center;
+  margin-top: 15px;
+  width: 130px;
+  padding: 5px 0;
+  outline: none;
+  color: wheat;
+  background-color:  rgba(137, 73, 5, 1);
+  border: white solid 1px;
+  border-radius: 10px;
+  box-shadow: wheat 3px 3px 3px;
+  cursor: pointer;
+}
+button:hover{
+   box-shadow:inset wheat 3px 3px 5px;
+}
+.checkerBlack {
+  background-color: black;
+}
+.checkerWhite {
+  background-color: rgb(253, 228, 202);
+}
+.toRemove {
+  display: none;
+}
+
+.falseMove {
+  color: red;
+  background-color: yellow;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  padding: 5px 5px;
+  border-radius: 10px;
+  border: blue 2px solid;
+  z-index: 30;
+}
+.king{
+  border: red 5px solid;
+}
+.active {
+  display: block;
+}
+.inactive{
+  display: none;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <p class="nextPlayer: ">Next Player <span id="player">Black</span></p>
+
+<div class="scoreBoard">
+    <p>White Captured; <span id="blackCheckersCaptured">0</span></s></p>
+       <p>Black Captured; <span id="whiteCheckersCaptured">0</span></s></p>
+</div>
+      
+      <div class="gameBoard" id="gameBoard">
+        <div class="square squareCream"></div>
+        <div class="square squareBrown  doubleWhite">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown doubleWhite">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown  doubleWhite">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown  doubleWhite">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+
+        <div class="square squareBrown">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerBlack" draggable="true"></div>
+        </div>
+
+        <div class="square squareBrown"></div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown"></div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown"></div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown"></div>
+        <div class="square squareCream"></div>
+
+        <div class="square squareCream"></div>
+        <div class="square squareBrown"></div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown"></div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown"></div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown"></div>
+
+        <div class="square squareBrown">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+
+        <div class="square squareBrown  doubleBlack">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown  doubleBlack">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown  doubleBlack">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+        <div class="square squareBrown  doubleBlack">
+          <div class="checker checkerWhite" draggable="true"></div>
+        </div>
+        <div class="square squareCream"></div>
+      </div>
+
+      <p class="info" id="info">You are dragging:</p>
+      <p class="falseMove" id="falseMove">FALSE MOVE</p>
+      <div class="startScreen" id="startScreen">
+        <h1 class="title ">Checkers Game</h1>
+        <h2 class="title2">Game Rules</h2>
+       
+        <div class="listDiv">
+          <ol class="rulesList">
+          <li>Black always first to play </li>
+          <li>Players take alternate turns </li>
+          <li>Game is played on the brown squares only</li>
+          <li>Only forward diagonal left and right moves are allowed</li>
+          <li>Unless capturing an opposing checker by jumping over it, player can only move one square each go </li>
+          <li>If a player has an opportunity to capture an opposing checker, this move must be made</li>
+          <li>If the player has multiple capture opportunities he can only pick one to play</li>
+          <li>Multiple checkers can be captured if the opposing checkers are positioned on alternate squares allowing multiple jumps
+          </li>
+          <li>If a checker reaches the first row of the opponents side of the board, the checker becomes a King and diagonally in all directions</li>
+          <li>If a player captures all his opponents checker that player wins, If the board becomes locked where no moves can be made the game is a draw </li>
+        </ol>
+        </div>
+         <button id="startBtn">Start Game</button>
+        
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
